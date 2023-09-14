@@ -1,107 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morning Page</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
+        h1 {
+            font-size: 30px;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .card {
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .list-group {
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        .list-group-item {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .btn-link {
+            color: blue; /* Adjust the link color as needed */
+            text-decoration: none;
+        }
+
+        .btn-link:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+    </style>
 </head>
-
-<style>
-    body {
-        background-color: grey;
-    }
-
-    h1 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 50px;
-        text-align: center;
-        color: white;
-        padding: 10px;
-        margin-top: 20px;
-    }
-
-    .list-group {
-        font-size: 25px;
-        font-family: 'Courier New', Courier, monospace;
-    }
-
-    .card1 {
-        margin-top: 0%;
-        margin-left: 50px;
-
-    }
-
-    .card2 {
-        margin-top: -550px;
-        margin-left: 600px;
-    }
-</style>
 
 <body>
     <h1>Morning Page</h1>
-    </br></br>
-    <!-- <table>
-
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="Lrb.png" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">LRB</h5>
-                <p class="card-text">London Review of Books.</p>
-                <a href="www.lrb.co.uk" class="btn btn-primary">LRB</a>
-            </div>
-        </div>
-    </table> -->
     <div class="cards">
-        <div class="card1 card" style="width: 25rem; padding: 30px;">
-
+        <div class="card">
             <ul class="list-group list-group-flush">
-                <li><a href="https://ft.com">Financial Times<a></li>
-                <li><a href="https://harpers.org">Harper's Magazine<a></li>
-                <li><a href=" https://www.technologyreview.com/">MIT Tech Review<a></li>
-                <li><a href="https://economist.com">The Economist<a></li>
-                <li><a href=" https://www.hbr.org/"> HBR<a></li>
-                <li><a href=" https://www.theparisreview.org/">The Paris Review<a></li>
-                <li><a href="https://lrb.co.uk">London Review of Books<a></li>
-                <li><a href="https://wsj.com">Wall Street Journal<a></li>
-                <li><a href="http://www.leparisien.fr/">Le Parisien<a></li>
-                <li><a href="http://www.spiegel.de/">Der Spiegel<a></li>
-                <li><a href="https://vanityfair.com">Vanity Fair<a></li>
-                <li><a href=" https://www.theatlantic.com/">The Atlantic<a></li>
-                <li><a href=" https://www.newyorker.com/">The NewYorker<a></li>
-                <li><a href=" https://www.the-tls.co.uk/"> TLS UK<a></li>
+                <li class="list-group-item"><a class="btn-link" href="https://ft.com">Financial Times</a></li>
+                <li class="list-group-item"><a class="btn-link" href="https://harpers.org">Harper's Magazine</a></li>
+                <li class="list-group-item"><a class="btn-link" href="https://www.technologyreview.com/">MIT Tech
+                        Review</a></li>
+                <li class="list-group-item"><a class="btn-link" href="https://economist.com">The Economist</a></li>
+                <li class="list-group-item"><a class="btn-link" href="https://www.hbr.org/">HBR</a></li>
+                <li class="list-group-item"><a class="btn-link" href="https://www.theparisreview.org/">The Paris
+                        Review</a></li>
+                <li class="list-group-item"><a class="btn-link" href="https://lrb.co.uk">London Review of Books</a>
+                </li>
+                <li class="list-group-item"><a class="btn-link" href="https://wsj.com">Wall Street Journal</a></li>
+                <li class="list-group-item"><a class="btn-link" href="http://www.leparisien.fr/">Le Parisien</a></li>
+                <li class="list-group-item"><a class="btn-link" href="http://www.spiegel.de/">Der Spiegel</a></li>
+                <li class="list-group-item"><a class="btn-link" href="https://vanityfair.com">Vanity Fair</a></li>
+                <li class="list-group-item"><a class="btn-link" href="https://www.theatlantic.com/">The Atlantic</a>
+                </li>
+                <li class="list-group-item"><a class="btn-link" href="https://www.newyorker.com/">The NewYorker</a>
+                </li>
+                <li class="list-group-item"><a class="btn-link" href="https://www.the-tls.co.uk/">TLS UK</a></li>
             </ul>
         </div>
 
-        <div class="card2 card" style="width: 25rem; padding: 30px;">
-
+        <div class="card">
             <ul class="list-group list-group-flush">
-                <li><a href="https://www.sciencemag.org">Science Magazine<a></li>
-                <li><a href=" https://www.nature.com">Nature Journal<a></li>
-                <li><a href="https://www.sciencedirect.com">Science Direct<a></li>
-                <li><a href=" https://www.springer.com/">The Springer<a></li>
-                <li><a href="https://cen.acs.org/index.html">Chem & Eng News<a></li>
-                <li><a href="https://elsevier.com">Elsevier<a></li>
-                <li><a href="  https://pubmed.ncbi.nlm.nih.gov/">PubMed<a></li>
-                <li><a href="https://scientificamerican.com">Scientific American<a></li>
-                <li><a href="https://biorxiv.org">BioRxiv<a></li>
-                <li><a href=" https://www.jstor.org/">JSTOR<a></li>
-                <li><a href=" https://www.thelancet.com/">The Lancet<a></li>
-                <li><a href=" https://www.apa.org/">The APA<a></li>
-                <li><a href=" https://ajp.psychiatryonline.org">Psych Journal<a></li>
-
-
+                <li class="list-group-item"><a class="btn-link" href="https://www.sciencemag.org">Science Magazine</a>
+                </li>
+                <li class="list-group-item"><a class="btn-link" href="https://www.nature.com">Nature Journal</a></li>
+                <li class="list-group-item"><a class="btn-link" href="https://www.sciencedirect.com">Science Direct</a>
+                </li>
+                <li class="list-group-item"><a class="btn-link" href="https://www.springer.com/">The Springer</a></li>
+                <li class="list-group-item"><a class="btn-link" href="https://cen.acs.org/index.html">Chem & Eng
+                        News</a></li>
+                <li class="list-group-item"><a class="btn-link" href="https://elsevier.com">Elsevier</a></li>
+                <li class="list-group-item"><a class="btn-link" href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a></li>
+                <li class="list-group-item"><a class="btn-link" href="https://scientificamerican.com">Scientific
+                        American</a></li>
+                <li class="list-group-item"><a class="btn-link" href="https://biorxiv.org">BioRxiv</a></li>
+                <li class="list-group-item"><a class="btn-link" href="https://www.jstor.org/">JSTOR</a></li>
+                <li class="list-group-item"><a class="btn-link" href="https://www.thelancet.com/">The Lancet</a></li>
+                <li class="list-group-item"><a class="btn-link" href="https://www.apa.org/">The APA</a></li>
+                <li class="list-group-item"><a class="btn-link" href="https://ajp.psychiatryonline.org">Psych Journal</a>
+                </li>
             </ul>
         </div>
     </div>
-    <script src="" async defer></script>
 </body>
 
 </html>
+
